@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css");
+
+#wrap {
+  font-family: "Pretendard";
+}
+
+#wrap > img {
+  width: 100%;
+  height: auto;
+}
+
+#org {
+  width: 100%;
+  padding-top: 110px;
+  margin: 0 auto;
+}
+
+#org > h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.org_start {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.org_start > h3 {
+  color: #004170;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.org_start > h4 {
+  color: #333333;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+
+.org_start > img {
+  margin-left: -50px;
+}
+
+/* 1400이 차지하는 비율 */
+/* width: 72.916%; */
+
+.orgimgbox {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+  left: 4px;
+  top: 10px;
+}
+
+.orgimgbox > img:nth-child(2){margin: 0 40px}
+.orgimgbox > img:nth-child(3){margin-top: -50px;}
+
+.orgimgbox > img:nth-child(4){
+  padding-left: 9px;
+  margin-right: 17px;
+  margin-left: 47px;
+}
+
+
+/* 기술자 보유현황 */
+
+.tech {
+  margin-top: 120px;
+  padding-bottom: 150px;
+  margin-left: 13.5416%;
+}
+
+.tech > h3 {
+  color: #f6f6f6;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.tech > h4 {
+  color: #004170;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  position: relative;
+  top: -43px;
+}
+
+/* 표 부문 */
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+
+table > thead {
+  color: #fff;
+  background-color: #606e79;
+}
+table > thead > tr {
+  height: 48px;
+
+}
+table > thead > tr > th {
+  /* 폰트조정 */
+}
+
+table > tbody > tr > td {
+  height: 48px;
+}
+
+

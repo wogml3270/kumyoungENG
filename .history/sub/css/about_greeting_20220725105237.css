@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css");
+
+/* section #hello */
+
+body {
+  overflow-x: hidden;
+}
+
+#wrap > img {
+  width: 100%;
+  height: auto;
+}
+
+#hello {
+  position: relative;
+  width: 100%;
+  /* height: 1014px; */
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+#hello > h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.backcol {
+  width: 100%;
+  height: 80%;
+  /* margin-top: 374px; */
+  background-color: #F9F9FA;
+  position: absolute;
+  z-index: -1;
+  top: 401px;
+  /* top: 374px; */
+}
+
+.hello_2 {
+  display: flex;
+  justify-content: flex-end;
+  /* flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  position: absolute;
+  top: 296px; */
+  /* margin-left: 260px; */
+  width: 100%;
+  margin-top: 120px;
+}
+
+.greetimg{
+  width: 43.75%;
+  /* height: 37.5%; */
+}
+
+.greetimg > img {
+  width: 100%
+}
+
+.greetimg_m {
+  display: none;
+}
+
+/* width: 56.25%; 
+43.75,37.5*/
+
+
+.helloscript {
+  width: 38.54%;
+  margin-right: 80px;
+}
+
+.helloscript > h3 {
+  color: #333;
+  margin: 100px 0 40px 0;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.helloscript > h3 > span {
+  color: #0B7E00;
+}
+
+.helloscript_1 {
+  color: #666;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 40px;
+  /* margin-left: 20.1%; */
+}
+
+.helloscript_1 > p {
+  margin-bottom: 40px;
+}
+
+.ceoname {
+  position: relative;
+  left: 62%;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 18px;
+}
+
+.ceoname > span {
+  color: #666;
+  font-weight: 600;
+}
+
+.ceoname > strong {
+  color: #333;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:899px){
+
+  .hello_2 {
+    display: initial;
+  }
+  
+  .backcol {
+    height: 80%;
+    top: 32%;
+  }
+  
+  .helloscript {
+    width: 100%;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .helloscript > h3 {
+    display: block;
+    word-break: keep-all;
+    font-size: 28px;
+  }
+  
+  .greetimg {
+    display: none;
+  }
+
+  .greetimg_m {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .greetimg_m > img {
+    width: 100%;
+  }
+
+  .helloscript_1 {
+    word-break: keep-all;
+    width: 80%;
+    position: relative;
+    margin: 40px auto;
+  }
+
+  .ceoname {
+    display: flex;
+    flex-flow: row nowrap;
+    left: 58%;
+  }
+
+}

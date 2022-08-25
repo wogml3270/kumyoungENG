@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+ul,li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.snb {
+    position: relative;
+    top: -26px;
+    width: 72.916%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.snb > a {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: block;
+    width: 65px;
+    height: 60px;
+    text-indent: -9999px;
+    background-color: #004170;
+    background-image: url(./../images/Group.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.snb > a {
+    display: block;
+    width: 65px;
+    height: 60px;
+}
+
+.snb_box {
+    display: flex;
+    flex-flow: row nowrap;
+    /* margin-left: 20.5px; */
+    margin-left: 64px;
+    margin-top: 0;
+  
+}
+
+.snb_box > li {
+    position: relative;
+    text-indent: 20.5px;
+    /* text-indent: 30%; */
+    width: 209px;
+    height: 60px;
+    line-height: 60px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.snb_box > li > a {
+    display: block;
+    height: 60px;
+    color: #333;
+}
+
+.snb_box > li > a > img {
+    position: absolute;
+    top: 22.5px;
+    left: 80%;
+
+}
+
+.snb_box > li:last-child > a:hover > img {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.lnb {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    background-color: #fff;
+}
+
+.lnb > li > a {
+    color: #333;
+    display: block;
+}
+
+.lnb > li > a:hover {
+    background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 899px){
+    .snb{
+        height: 40px;
+    }
+    .snb > a{
+        width: 45px;
+        height: 40px;
+    }
+    .snb_box > li{
+        height: 40px;
+        line-height: 40px;
+    }
+    .snb_box > li > a{
+        height: 40px;
+    }
+    .snb_box > li > a > img{
+        top: 13.5%;
+    }
+}

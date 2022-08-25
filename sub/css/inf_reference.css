@@ -1,0 +1,99 @@
+@charset "utf-8";
+*,html,body{ margin: 0; padding: 0; box-sizing: border-box; }
+ul,ol,li{ list-style: none; }
+a { text-decoration: none; }
+
+h2{
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin-bottom: 80px;
+}
+.reference_box{
+    margin: 0 auto;
+    width: 72.916%;
+}
+.reference_content{
+    text-align: center;
+}
+.reference_content p:first-child{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.reference_content > p:nth-child(1) > span{
+    color: #004170;
+}
+.reference_content > p:nth-child(2){
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #333333;
+}
+.reference_content_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 24px;
+}
+.reference_content_box > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 451px;
+    height: 180px;
+}
+.reference_content_box > div:nth-child(1){
+    background-color: #004170;
+}
+.reference_content_box > div:nth-child(2){
+    background-color: #0B7E00;
+}
+.reference_content_box > div:nth-child(3){
+    background-color: #606E79;
+}
+.reference_content_box > div > a{
+    color: #ffffff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reference_content_box > div > a > img:first-child{
+    width: 50px;
+    height: 50px;
+}
+.reference_content_box > div > a > span{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+.reference_content_box > div > a > span > img{
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 899px){
+    .reference_content_box{
+        flex-direction: column;
+    }
+}

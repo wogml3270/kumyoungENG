@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.about-banner{
+    width: 100%;
+    height: 500px;
+    background: url(../../images/company-banner-image.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-banner p{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+  }
+  .about-banner span{
+    width: 40px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 16px 0;
+  }
+  .about-banner h3{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+  }

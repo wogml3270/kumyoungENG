@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+*,html,body{ margin: 0; padding: 0; box-sizing: border-box; }
+ul,ol,li{ list-style: none; }
+a { text-decoration: none; }
+
+.eminform-banner{
+    width: 100%;
+    height: 500px;
+    background: url(../images/eminform_bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.eminform-banner p{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.eminform-banner span{
+    width: 40px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 16px 0;
+}
+.eminform-banner h3{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+
+.eminform{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.eminform_box{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eminform_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.eminform_title > p{
+    color: #ffffff;
+    margin: 16px 0;
+    font-family: 'Pretendard';
+    font-style: normal;
+    letter-spacing: -0.01em;
+}
+.eminform_title > p:nth-child(1){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.eminform_title > p:nth-child(2){
+    width: 40px;
+    height: 1px;
+    background: #ffffff;
+}
+.eminform_title > p:nth-child(3){
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}

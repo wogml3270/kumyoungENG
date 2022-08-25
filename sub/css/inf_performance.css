@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*,html,body{ margin: 0; padding: 0; box-sizing: border-box; }
+ul,ol,li{ list-style: none; }
+a { text-decoration: none; }
+
+.performance{
+    width: 100%;
+    margin-top: 120px;
+}
+.performance > h2{
+    text-align: center;
+    margin-bottom: 120px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #333333;
+}
+.performance_tab{
+    width: 72.916%;
+    margin: auto;
+}
+.performance_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.performance_list > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 52px;
+    border: 1px solid #004170;
+    cursor: pointer;
+}
+.performance_list > li{
+    color: #333333;
+}
+.performance_list > li:hover{
+    background-color: #004170;
+    color: #ffffff;
+}
+.performance_list > li.performance_active{
+    background-color: #004170;
+    color: #ffffff;
+}
+.performance_contents{
+    position: relative;
+    width: 72.916%;
+    margin: auto;
+}
+
+.performance_contents h2{
+    color: #f6f6f6;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: -0.01em;
+    margin-top: 80px;
+    display: block;
+} 
+.performance_contents h3{
+    position: absolute;
+    top: 52px;
+    color: #004170;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.01em;
+    display: block;
+}
+.performance_grid{
+    margin-top: 40px;
+}
+.performance_grid > div{
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+.performance_grid > div.performance_active{
+    display: grid;
+}
+.performance_grid div img{
+    width: 100%;
+}
+.performance_contents > .performance_active{
+    display: block;
+}
+.title_tab{
+    display: none;
+}

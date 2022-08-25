@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap > img {
+    width: 100%;
+    
+  }
+
+#history {
+    width: 100%;
+    font-family: 'SUIT';
+}
+
+#history > h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 110px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.years_snb {
+    /* width: 58.75%; */
+    margin-left: 13.54%;
+    /* margin-top: 120px; */
+}
+
+.years_snb > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 335px;
+    height: 52px;
+}
+
+.years_snb > ul > li {
+    width: 152px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    border: 1px solid #004170;
+}
+
+.years_snb > ul > li:hover {
+    color: #fff;
+    background-color: #004170;
+    cursor: pointer;
+}
+
+.list > .active {
+    color: #fff;
+    background-color: #004170;
+}
+.years.active{
+    display: block;
+    height: 1200px;
+}
+.past.active {
+    display: block;
+    height: 1000px;
+}
+
+/* 연혁 현재 */
+
+.years {
+    margin-top: 80px;
+    display: none;
+    position: relative;
+}
+
+.years > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-bottom: 120px;
+}
+
+.years > div:last-child{
+    margin-bottom: 0;
+}
+
+.years > div > span {
+    width: 101px;
+    color: #333;
+    font-size: 42px;
+    font-weight: 600;
+    /* margin-right: 10.417%; */
+    margin-right: 205px;
+}
+
+.years > div > ul {
+    margin-top: 7px;
+    /* margin-left: 205px; */
+    /* margin-left: 10.417%; */
+}
+
+/* .years > .y_2021 > ul {
+    margin-left: 196.38px;
+} */
+
+.years > div > ul > li {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 55px;
+  margin-bottom: 24px;
+  /* list-style-type: circle; */
+  position: relative;
+}
+
+.years > div > ul > li::after{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FFFFFF;
+  border: 1px solid #0B7E00;
+  border-radius: 5px;
+  left: 0;
+  top: 10px;
+}
+
+.years > div > ul > li:first-child:after{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #0B7E00;
+  border: 1px solid #0B7E00;
+  border-radius: 15px;
+  left: -5px;
+  top: 5px;
+}
+
+.years > div > ul > li::marker {
+    list-style-position: inside;
+    color: #0B7E00;
+}
+
+/* left값 li 마커 정중앙으로 맞추기?? */
+.historyline {
+    position: absolute;
+    left: 309.2px;
+    /* left: 21.477%; */
+    /* margin-right: 50%; */
+    /* top: -1218px; */
+    top: 20px;
+    display: block;
+    width: 1px;
+    /* height: 1062px; */
+    height: 89%;
+    border-left: 1px solid #0B7E00;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* 연혁 과거 */
+
+.past {
+    display: none;
+    margin-top: 80px;
+}
+
+.past > div {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 120px;
+}
+
+.past > div:last-child{
+    margin-bottom: 0;
+}
+
+.past > div > span {
+    width: 101px;
+    color: #333;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.past > div > ul {
+    margin-top: 7px;
+    margin-left: 200px;
+}
+
+.past > div > ul > li {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 55px;
+  margin-bottom: 24px;
+  /* list-style-type: circle; */
+  position: relative;
+}
+
+.past > div > ul > li::after{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FFFFFF;
+  border: 1px solid #0B7E00;
+  border-radius: 5px;
+  left: 0;
+  top: 10px;
+}
+
+.past > div > ul > li:first-child:after{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #0B7E00;
+  border: 1px solid #0B7E00;
+  border-radius: 15px;
+  left: -5px;
+  top: 5px;
+}
+
+.past > div > ul > li::marker {
+    list-style-position: inside;
+    color: #0B7E00;
+}
+
+.pastline {
+    position: relative;
+    left: 304px;
+    top: -1010px;
+    display: block;
+    width: 1px;
+    height: 852px;
+    border-left: 1px solid #0B7E00;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+@media screen and (max-width:900px){
+
+    #history > h2 {
+        margin-bottom: 80px;
+    }
+
+    .years > div > span {
+        width: 62px;
+        font-size: 30px;
+        margin-right: 100px;
+    }
+
+    .years > div > ul {
+        margin-left: 80px;
+    }
+
+    /* .years > div > ul > li{
+        word-break: keep-all;
+        font-size: 18px;
+        padding-left: 35px;
+        color: #333;
+        margin-bottom: 24px;
+        list-style-type: circle;
+
+        position: relative;
+    }
+
+    .years> div > ul > li:first-child::marker {
+        font-size: 60px;
+    } */
+
+    .years > div > ul > li:after{
+        /* display: none; */
+    }
+    
+
+    .historyline {
+        left: 165.2px;
+        height: 100%;
+    }
+}

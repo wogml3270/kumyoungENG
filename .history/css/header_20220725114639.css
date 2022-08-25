@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*,html,body { margin: 0; padding: 0; box-sizing: border-box; }
+ul,ol,li { list-style: none; }
+a { text-decoration: none; }
+
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 1px solid #CECED5; */
+    z-index: 9999;
+    transition: all 0.2s;
+}
+.header > a{
+    display: block;
+    margin-left: 13.542%;
+}
+.header > .right{
+    margin-right: 13.542%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.header > .right .lang{
+    display: flex;
+    align-items: center;
+}
+.header > .right .lang a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #DDDDDD;
+    transition: all 0.3s;
+}
+.header > .right .lang a.active{
+    font-weight: 400;
+    color: #000340;
+}
+.header > .right .lang a:hover{
+    font-weight: 400;
+    color: #000340;
+}
+.header > .right .lang span{
+    width: 1px;
+    height: 12px;
+    background: #000340;
+    margin: 0 14px;
+}
+.header_gnb{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.header_gnb > li{
+    width: 84px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 60px;
+}
+.header_gnb > li:last-child{
+    margin-right: 106px;
+}
+.header_gnb > li > a{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+.right:hover .header_gnb > li > a{
+    color: #000340;
+}
+
+
+.menu-open{
+    position: absolute;
+    width: 100%;
+    height: 323px;
+    /* display: none; */
+    top: 80px;
+    left: 0;
+    background: #FFFFFF;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.menu-open.active{
+    visibility: visible;
+    opacity: 1;
+}
+.menu-open .menu_box{
+    position: absolute;
+    top: 30px;
+    left: 28.646%;
+}
+
+.menu-open .menu_box.gnb02_01 .gnb02_01_01,
+.menu-open .menu_box.gnb02_01 .gnb02_01_02,
+.menu-open .menu_box.gnb02_01 .gnb02_01_03,
+.menu-open .menu_box.gnb02_01 .gnb02_01_04{
+    display: flex;
+    width: 340px;
+}
+.gnb03_01_01,
+.gnb03_01_02{
+    width: 200px;
+
+}
+
+/* .menu_box{
+    margin-top: 60px;
+} */
+.menu_box > li{
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.menu_box.gnb02_01 > li.gnb02_01_01:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+.menu_box.gnb02_01 > li.gnb02_01_01:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+.menu_box.gnb02_01 > li.gnb02_01_02:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 100px;
+    margin-left: 20px;
+}
+.menu_box.gnb02_01 > li.gnb02_01_02:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+.menu_box.gnb02_01 > li.gnb02_01_03:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 100px;
+    margin-left: 20px;
+}
+.menu_box.gnb02_01 > li.gnb02_01_03:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+.menu_box.gnb02_01 > li.gnb02_01_04:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 100px;
+    margin-left: 20px;
+}
+.menu_box.gnb02_01 > li.gnb02_01_04:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menu_box.gnb03_01 > li.gnb03_01_01:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+.menu_box.gnb03_01 > li.gnb03_01_01:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+.menu_box.gnb03_01 > li.gnb03_01_02:hover > a::after{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+.menu_box.gnb03_01 > li.gnb03_01_02:hover > .menu_box_content{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.menu-open .menu_box.gnb01_01{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-open .menu_box.gnb01_01.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-open .menu_box.gnb02_01{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-open .menu_box.gnb02_01.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-open .menu_box.gnb03_01{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-open .menu_box.gnb03_01.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-open .menu_box.gnb04_01{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-open .menu_box.gnb04_01.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.menu_box > li > a{
+    position: relative;
+    display: block;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    transition: all 0.3s;
+}
+.menu_box_content{
+    position: absolute;
+    left: 169px;
+    top: -5px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.3s;
+}
+li.gnb02_01_02 .menu_box_content{
+    top: 33px;
+}
+li.gnb02_01_03 .menu_box_content{
+    top: 53px;
+}
+li.gnb02_01_04 .menu_box_content{
+    top: 171px;
+}
+li.gnb03_01_02 .menu_box_content{
+    top: 105px;
+}
+.menu_box_content > li{
+    margin-bottom: 20px;
+}
+.menu_box_content > li > a{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #5B5D7E;
+}
+
+/* header mobile */
+
+.header_gnb_mobile{
+    display: none;
+}
+.header_gnb_mobile_toggle{
+    display: none;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+.header_gnb_mobile > li > ul{
+    display: none;
+}

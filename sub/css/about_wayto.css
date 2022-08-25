@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css");
+
+#wrap {
+  font-family: "Pretendard";
+  width: 100%;
+}
+
+#wayto {
+  padding-top: 110px;
+}
+
+#wayto > h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#wayto > article {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-top: 120px;
+  margin-left: 13.5416%;
+  overflow-x: hidden;
+}
+
+.waymap > iframe {
+  width: 800px;
+  height: 500px;
+}
+
+.waytocome {
+  padding-left: 4.304%;
+  margin-top: 30px;
+}
+
+.waytocome > div > address {
+  color: #0b7e00;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 40px;
+}
+
+.waytocall {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.waytocall + a {
+  display: block;
+  color: #666;
+  margin-top: 11px;
+}
+
+.waytoscript {
+  margin-top: 60px;
+}
+
+.waytoscript > p {
+  color: #999;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

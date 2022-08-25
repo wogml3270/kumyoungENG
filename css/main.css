@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+*,html,body { margin: 0; padding: 0; box-sizing: border-box; }
+ul,ol,li { list-style: none; }
+a { text-decoration: none; }
+
+.main_container{ position: relative; width: 100%; }
+.main_bg{
+    position: relative; width: 100%; height: 900px; left: 0px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3),
+                                      rgba(255, 255, 255, 0.3)),
+                linear-gradient(0deg, rgba(23, 64, 125, 0.3), 
+                                      rgba(23, 64, 125, 0.3)),
+                url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.txt_box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 350px;
+    width: 100%;
+}
+.txt_box .txt_main{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    z-index: 99;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.txt_box .txt_sub{
+    width: 35px;
+    height: 26px;
+    background: url("../images/ldquo.png");
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.txt_box .txt_sub:last-child{
+    transform: rotate(180deg);
+}
+.txt_box .emphasis{
+    color: #004170;
+}
+
+.main_slide{
+    width: 100%;
+    margin-top: 278px;
+}
+.main_slide > ul{
+    display: flex;
+    justify-content: center;
+}
+.main_slide > ul > li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px 20px 40px;
+    z-index: 99;
+    width: 350px;
+    height: 160px;
+    position: relative;
+}
+.main_slide > ul > li:nth-child(1){ 
+    background: rgba(96, 110, 121, 0.8);
+}
+.main_slide > ul > li:nth-child(2){ 
+    background: rgba(0, 65, 112, 0.8);
+ }
+.main_slide > ul > li:nth-child(3){ 
+    background: rgba(11, 126, 0, 0.8);
+ }
+.main_slide > ul > li:nth-child(4){ 
+    background: rgba(0, 111, 190, 0.8);
+ }
+.main_slide > ul > li > a{ 
+    width: 100%;
+    height: 160px;
+    display: inline-block;
+    
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160px;
+    
+    letter-spacing: -0.01em;
+    
+    color: #FFFFFF;
+}
+.main_slide > ul > li > img{
+    position: absolute;
+    right: 7.33%;
+    top: 13.33%;
+    cursor: pointer;
+}
+
+/* main content (content01) */
+
+.content01{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content01 > h2{
+    width: 110px;
+    height: 40px;
+    
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    
+    letter-spacing: -0.01em;
+    
+    color: #004170;
+}
+.tab_menu > .list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.tab_menu > .list > li{
+    margin-right: 32px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+}
+.tab_menu > .list > li:last-child{
+    margin-right: 0;
+}
+.tab_menu .active{
+    color: #0B7E00;
+    position: relative;
+}
+.tab_menu .active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #0B7E00;
+    left: 0;
+    bottom: -4px;
+}
+.content01_area{
+    height: 380px;
+    overflow: hidden;
+}
+.content01_box{
+    display: none;
+    align-items: center;
+    gap: 24px;
+}
+.content01_box.active{
+    display: flex;
+}
+
+/* .content01_04{ background: url("../images/B.png") no-repeat center; }
+.content01_05{ background: url("../images/content01_02.png"); }
+.content01_06{ background: url("../images/content01_03.png"); }
+.content01_07{ background: url("../images/플.png") no-repeat center; }
+.content01_08{ background: url("../images/content01_02.png"); }
+.content01_09{ background: url("../images/content01_03.png"); }
+.content01_10{ background: url("../images/U.png") no-repeat center; }
+.content01_11{ background: url("../images/content01_02.png"); }
+.content01_12{ background: url("../images/content01_03.png"); }
+.content01_13{ background: url("../images/신.png") no-repeat center; }
+.content01_14{ background: url("../images/content01_02.png"); }
+.content01_15{ background: url("../images/content01_03.png"); }
+.content01_16{ background: url("../images/제.png") no-repeat center; }
+.content01_17{ background: url("../images/content01_02.png"); }
+.content01_18{ background: url("../images/content01_03.png"); }
+.content01_19{ background: url("../images/기.png") no-repeat center; }
+.content01_20{ background: url("../images/content01_02.png"); }
+.content01_21{ background: url("../images/content01_03.png"); } */
+.content01_img{
+    width: 100%;
+    height: 264px;
+}
+.content01_img img{
+    margin-right: 92px;
+}
+.content01_img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.content01_img2:hover:before, .content01_img2:hover:before{
+    content: "더보기";
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 16px 40px;
+    font-size: 13px;
+    position: absolute;
+}
+.content01_caption{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    width: 670px;
+    color: #5B5D7E;
+    margin: 10px 0 0 100px;
+}
+
+/* content02 */
+.content02{
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.content02 > h2{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    margin: 0 auto;
+    width: 1400px;
+    margin-bottom: 40px;
+    color: #5B5D7E;
+}
+.content02 > h2 > span{
+    color: #004170;
+}
+.content02 a{
+    width: 100%;
+    height: 100%;
+}
+.content02_box{
+    display: flex;
+    justify-content: center;
+}
+.content02_box > div{
+    position: relative;
+}
+.content02_02{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.content02_txt_box{
+    position: absolute;
+    top: 240px;
+    left: 80px;
+    width: 307px;
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #0B7E00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content02_txt_box p{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #5B5D7E;
+}
+
+/* content03 */
+.content03{
+    height: 400px;
+    position: relative;
+    z-index: 99;
+}
+.content03_bg{
+    background: #f5f5f5;
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.content03_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content03_group > h2{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #004170;
+}
+.content03_box{
+    width: 926px;
+    height: 240px;
+    background: #004170;
+    margin-top: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Pretendard';
+    font-style: normal;
+    letter-spacing: -0.01em;
+}
+.content03_box_title{
+    width: 405px;
+}
+.content03_box_title > p:first-child{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.content03_box_title > p:last-child{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.content03_box_sub{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 658px;
+}
